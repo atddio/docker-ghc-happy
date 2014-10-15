@@ -5,3 +5,9 @@ RUN apt-get update && apt-get install -y ghc-7.8.3 cabal-install-1.20
 
 ENV LANG C.UTF-8
 ENV PATH /opt/cabal/1.20/bin:/opt/ghc/7.8.3/bin:$PATH
+
+RUN cabal update
+RUN cabal install hdevtools 
+RUN cabal install happy
+RUN cabal install alex
+RUN cabal install hlint
