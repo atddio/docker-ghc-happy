@@ -1,4 +1,5 @@
-FROM ubuntu
+FROM mostalive/lxde-empty
+ 
 RUN apt-get update && apt-get install -y software-properties-common
 RUN add-apt-repository -y ppa:hvr/ghc
 RUN apt-get update && apt-get install -y ghc-7.8.3 cabal-install-1.20
