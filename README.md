@@ -1,20 +1,22 @@
-#Docker with Haskell - GHC 7.8.3, Cabal and basic tools
+#Docker containers for Haskell - GHC 7.8.3, Cabal, XEmacs
 
 If you had a Docker container with GHC, would that make you Happy?
 
+This repository contains two kinds of environments for haskell
+development: commandline and X
+(with X2Go). Each with just GHC and CABAL, and development tools
+separate. 
+
+
+
 
 ###Build it yourself
-```
-git clone https://github.com/atddio/docker-ghc.git
-cd docker-ghc
-sudo docker build -t yourname/ghc .
-sudo docker run yourname/ghc ghc --version
-```
+
+Instructions to be replaced by build script. 
 
 ###Use Autobuilt Dockerhub version
-```
-sudo docker run mostalive/ghc ghc --version
-```
+
+instructions to be modified.
 
 ## Credits
 

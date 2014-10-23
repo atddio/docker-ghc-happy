@@ -16,8 +16,7 @@ ENV LC_ALL en_US.UTF-8
 ENV PATH /opt/cabal/1.20/bin:/opt/ghc/7.8.3/bin:$PATH
 
 ADD scripts/ scripts/
-RUN scripts/build-executables-in-sandbox.sh alex 
-#happy hdevtools hlint ghc-mod hasktags
+RUN scripts/build-executables-in-sandbox.sh alex happy hdevtools hlint ghc-mod hasktags
 
 # put tools in PATH of all users, happy needed for structured-haskell
 RUN mv /haskell-devtools/* /usr/local/bin/
