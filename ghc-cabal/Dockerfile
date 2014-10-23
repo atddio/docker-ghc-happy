@@ -7,7 +7,3 @@ ENV LANG C.UTF-8
 ENV PATH /opt/cabal/1.20/bin:/opt/ghc/7.8.3/bin:$PATH
 
 RUN cabal update
-RUN cabal install hdevtools 
-RUN cabal install happy
-RUN cabal install alex
-RUN cabal install hlint
