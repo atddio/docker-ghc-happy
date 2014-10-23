@@ -20,7 +20,7 @@ RUN scripts/build-executables-in-sandbox.sh alex happy hdevtools hlint ghc-mod h
 
 # put tools in PATH of all users, happy needed for structured-haskell
 RUN mv /haskell-devtools/* /usr/local/bin/
-RUN scripts/build-executables-in-sandbox.sh structured-haskell-mode
+RUN scripts/build-executables-in-sandbox.sh happy structured-haskell-mode
 #RUN ln -s $(pwd)/build-devtools/haskell-devtools/* /usr/local/bin/
 RUN mv haskell-devtools/* /usr/local/bin/
 
